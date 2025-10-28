@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакты — Кафе «Лаванда»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Кафе «Лаванда»</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">☰</button>
+      <nav id="nav" class="site-nav" aria-label="Главная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <div class="contact-grid">
+      <div>
+        <h2>Наши данные</h2>
+        <p>Адрес: г. Нур-Султан, ул. Примерная, 1</p>
+        <p>Тел: +7 (7**) ***-**-**</p>
+        <p>Режим работы: 09:00 — 21:00</p>
+      </div>
+
+      <div>
+        <h2>Связаться</h2>
+        <form id="contact-form" novalidate>
+          <label>
+            Имя
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Сообщение
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Отправить</button>
+            <button type="reset" class="btn outline">Очистить</button>
+          </div>
+          <p id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year5"></span> Кафе «Лаванда».</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Галерея — Кафе «Лаванда»</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Кафе «Лаванда»</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">☰</button>
+      <nav id="nav" class="site-nav" aria-label="Главная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="gallery.html" class="active">Галерея</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Галерея</h1>
+    <p>Здесь вы можете видеть как интерьер внутри нашего кафе "Лаванда", так и то как оно выглядит снаружи здания.</p>
+
+    <div class="gallery-grid">
+      <img src="images/2 interier.png" alt="Фото 1" class="gallery-item" tabindex="0">
+      <img src="images/3 interier.png" alt="Фото 2" class="gallery-item" tabindex="0">
+      <img src="images/4 interier.png" alt="Фото 3" class="gallery-item" tabindex="0">
+      <img src="images/5 interier.png" alt="Фото 4" class="gallery-item" tabindex="0">
+      <!-- Добавь сколько нужно -->
+    </div>
+  </main>
+
+  <!-- Модальное окно для просмотра -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="modal-close" class="modal-close" aria-label="Закрыть">✕</button>
+    <img id="modal-img" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year4"></span> Кафе «Лаванда».</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
